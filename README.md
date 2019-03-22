@@ -9,7 +9,7 @@ Live Demo: https://hharnisc.github.io/storybook-addon-figma
 Install the addon
 
 ```sh
-npm i --save-dev storybook-addon-figma
+npm i --save-dev git@github.com:swapkats/storybook-addon-figma.git#develop
 ```
 
 Register the plugin
