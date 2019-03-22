@@ -67,6 +67,11 @@ export class FigmaPanel extends React.Component {
       allowFullScreen,
       embedHost,
     } = this.state
+    const { active } = this.props;
+
+    if (!active) {
+      return null;
+    }
 
     if (!url) {
       return (
@@ -114,6 +119,6 @@ export class FigmaPanel extends React.Component {
 addons.register(ADDON_ID, api => {
   addons.addPanel(PANEL_ID, {
     title: 'Figma',
-    render: () => <FigmaPanel channel={addons.getChannel()} api={api} />,
+    render: ({ active }) => <FigmaPanel channel={addons.getChannel()} api={api} active={active} />,
   })
 })
