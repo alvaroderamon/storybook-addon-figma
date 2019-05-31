@@ -1,15 +1,15 @@
 # storybook-addon-figma
 
-![Storybook Addon For Figma](https://raw.githubusercontent.com/hharnisc/storybook-addon-figma/master/storybook-addon-figma.gif)
+![Storybook Addon For Figma](https://raw.githubusercontent.com/swapkats/storybook-addon-figma/master/storybook-addon-figma.gif)
 
-Live Demo: https://hharnisc.github.io/storybook-addon-figma
+Live Demo: https://swapkats.github.io/storybook-addon-figma
 
 ## Quickstart
 
 Install the addon
 
 ```sh
-npm i --save-dev storybook-addon-figma
+npm i --save-dev storybook-figma
 ```
 
 Register the plugin
@@ -18,7 +18,7 @@ Register the plugin
 // in .storybook/addons.js
 import '@storybook/addon-actions/register'
 // register the Figma addon
-import 'storybook-addon-figma/register'
+import 'storybook-figma/register'
 ```
 
 Link a Figma design to your story
@@ -26,7 +26,7 @@ Link a Figma design to your story
 ```jsx
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { WithFigma } from 'storybook-addon-figma'
+import { WithFigma } from 'storybook-figma'
 
 storiesOf('Button')
   .add('With Figma', () => (
@@ -45,7 +45,7 @@ storiesOf('Button')
 ```jsx
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { WithFigma } from 'storybook-addon-figma'
+import { WithFigma } from 'storybook-figma'
 
 storiesOf('Button')
   .add('primary', () => (
@@ -69,7 +69,7 @@ storiesOf('Button')
 ```jsx
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import figmaDecorator from 'storybook-addon-figma'
+import figmaDecorator from 'storybook-figma'
 import App from './components/App'
 
 storiesOf('App')
@@ -96,7 +96,7 @@ Register the options addon in your `addons.js`
 ```jsx
 // in .storybook/addons.js
 import '@storybook/addon-actions/register'
-import 'storybook-addon-figma/register'
+import 'storybook-figma/register'
 // register the options addon
 import '@storybook/addon-options/register';
 ```
