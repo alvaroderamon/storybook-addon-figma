@@ -1,9 +1,10 @@
 {
   "name": "storybook-addon-figma",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Storybook addon for figma",
   "main": "dist/index.js",
   "scripts": {
+    "install": "node .scripts/npm-prepublish.js",
     "prepublish": "node .scripts/npm-prepublish.js",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "deploy-storybook": "storybook-to-ghpages",
